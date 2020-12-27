@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+        <title>View Employees</title>
+    </head>
+
+    <body>
+        <script>
+            const checkIfUserIsLoggedIn = async () => {
+                
+                // Get user
+                const response = await fetch('/get-user');
+                let user = await response.json();
+            
+                // If no user is logged in, redirect to login page
+                if (user === null) {
+                    window.location.replace("/");
+                }
+                else if (!user.manager) {
+                    window.location.replace("/home.html");
+                }
+            };
+
+            checkIfUserIsLoggedIn();
+        </script>
+
+
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/profile.html">Profile</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+
+        <h1>Create an Employee</h1>
+
+        <form action="create-employee" method="POST">
+            <label>
+                <input type="email" placeholder="Email" id="email" name="email" required />
+            </label>
+            <label>
+                <input type="password" placeholder="Password" id="password" name="password" required />
+            </label>
+            <label>
+                <input type="text" placeholder="First Name" id="first-name" name="first-name" required />
+            </label>
+            <label>
+                <input type="text" placeholder="Last Name" id="last-name" name="last-name" required />
+            </label>
+
+            <button type="submit">Create Employee</button>
+        </form>
+
+    </body>
+</html>

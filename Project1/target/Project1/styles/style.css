@@ -1,0 +1,36 @@
+tr, th, td, table {
+    border-width: 1px;
+    border-style: solid;
+}
+
+td, th{
+    text-align: center;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+a:hover {
+    color: gray;
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.approveButton {
+    background-color: green;
+}
+
+.denyButton {
+    background-color: red;
+}

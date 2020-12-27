@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+        <title>View Employees</title>
+    </head>
+
+    <body>
+        <script>
+            const checkIfUserIsLoggedIn = async () => {
+                
+                // Get user
+                const response = await fetch('/get-user');
+                let user = await response.json();
+            
+                // If no user is logged in, redirect to login page
+                if (user === null) {
+                    window.location.replace("/");
+                }
+                else if (user.manager) {
+                    window.location.replace("/home.html");
+                }
+            };
+
+            checkIfUserIsLoggedIn();
+        </script>
+
+
+        <nav>
+            <a href="/home.html">Home</a>
+            <a href="/profile.html">Profile</a>
+            <a href="/logout">Log Out</a>
+        </nav>
+
+        <h1>Submit A Request</h1>
+
+        <form action="submit-request" method="POST">
+            <label>
+                <input type="number" placeholder="$0.00" id="amount" name="amount" required />
+            </label>
+            <label>
+                <input type="text" placeholder="Reason for request..." id="description" name="description" maxlength="200" required />
+            </label>
+
+            <button type="submit">Submit Request</button>
+        </form>
+
+    </body>
+</html>

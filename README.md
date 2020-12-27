@@ -31,6 +31,7 @@ List of features ready and TODOs for future development
 
 To-do list:
 * Users can edit their personal information.
+* Users can reset their passwords.
 * Admins can view requests by user.
 
 ## Getting Started

@@ -20,7 +20,7 @@ This project simulates a business' expense reimbursement system, where employees
 
 ## Features
 
-List of features ready and TODOs for future development
+Features:
 * Users can submit requests.
 * Users can view their pending/resolved requests.
 * Users can view their personal information.

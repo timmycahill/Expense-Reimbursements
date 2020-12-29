@@ -6,15 +6,15 @@ This project simulates a business' expense reimbursement system, where employees
 
 ## Technologies Used
 
-* Java - version 1.8
-* JUnit - version 4.11
-* Log4J - version 2.13.3
+* Java
+* JUnit
+* Log4J
 * JDBC
-* Maven - version 4.0.0
-* Tomcat - version 8.5.60
-* PostgreSQL - version 42.2.18
-* Java Servlet - version 3.1.0
-* Jackson - version 2.11.3
+* Maven
+* Tomcat
+* PostgreSQL
+* Java Servlets
+* Jackson
 
 ## Features
 

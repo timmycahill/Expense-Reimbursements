@@ -12,8 +12,6 @@ This project simulates a business' expense reimbursement system, where employees
 * JDBC
 * Maven - version 4.0.0
 * Tomcat - version 8.5.60
-* Smart Tomcat
-* AWS RDS
 * PostgreSQL - version 42.2.18
 * Java Servlet - version 3.1.0
 * Jackson - version 2.11.3

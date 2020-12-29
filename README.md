@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project simulates a business' expense reimbursement system.
+This project simulates a business' expense reimbursement system, where employees are able to submit requests to be reimbursed for expenses and managers are able to approve or deny these requests.
 
 ## Technologies Used
 
